@@ -122,6 +122,8 @@ jobs:
       - name: ⤵️ Download base image
         if: steps.flags.outputs.from != 'null'
         run: docker pull "${{ steps.flags.outputs.from }}"
+      - name: Set lowercase repository owner
+        run: echo "REPO_OWNER_LOWER=$(echo ${{ github.repository_owner }} | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
       - name: ✅ Verify authenticity of base image
         if: steps.flags.outputs.from != 'null' && needs.information.outputs.base_image_signer != 'null'
         run: |
@@ -141,7 +143,7 @@ jobs:
           file: ${{ needs.information.outputs.target }}/Dockerfile
           cache-from: |
             type=local,src=/tmp/.docker-cache
-            ghcr.io/${{ github.repository_owner && github.repository_owner.toLowerCase() }}/${{ needs.information.outputs.slug }}/${{ matrix.architecture }}:edge
+            ghcr.io/${{ env.REPO_OWNER_LOWER }}/${{ needs.information.outputs.slug }}/${{ matrix.architecture }}:edge
           cache-to: type=local,mode=max,dest=/tmp/.docker-cache-new
           platforms: ${{ steps.flags.outputs.platform }}
           build-args: |
