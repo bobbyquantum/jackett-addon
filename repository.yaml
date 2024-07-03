@@ -1,0 +1,4 @@
+# https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
+name: Jackett add-on repository
+url: "https://github.com/BobbyQuantum/jacket-addon"
+maintainer: Bobby Quantum <166758526+BobbyQuantum@users.noreply.github.com>
