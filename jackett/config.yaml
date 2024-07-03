@@ -1,5 +1,5 @@
 name: Jackett
-version: dev
+version: 0.22.267
 slug: jackett
 description: Jackett for Home Assistant
 url: https://github.com/BobbyQuantum/jackett-addon
