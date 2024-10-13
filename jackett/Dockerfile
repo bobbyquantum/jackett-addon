@@ -3,7 +3,7 @@ ARG BUILD_FROM=ghcr.io/hassio-addons/debian-base/amd64:7.3.4
 FROM ${BUILD_FROM}
 
 ARG BUILD_ARCH
-ARG JACKETT_RELEASE=v0.22.267
+ARG JACKETT_RELEASE=v0.22.779
 
 # environment settings
 ENV XDG_DATA_HOME="/data" \
@@ -80,8 +80,8 @@ LABEL \
     org.label-schema.build-date="${BUILD_DATE}" \
     org.label-schema.name="jackett" \
     org.label-schema.schema-version="${BUILD_VERSION}" \
-    org.label-schema.url="https://github.com/BobbyQuantum/jackett-addon" \
-    org.label-schema.usage="https://github.com/BobbyQuantum/jackett-addon" \
+    org.label-schema.url="https://github.com/bobbyquantum/jackett-addon" \
+    org.label-schema.usage="https://github.com/bobbyquantum/jackett-addon" \
     org.label-schema.vcs-ref="${BUILD_REF}" \
-    org.label-schema.vcs-url="https://github.com/BobbyQuantum/" \
+    org.label-schema.vcs-url="https://github.com/bobbyquantum/" \
     org.label-schema.vendor="No Vendor"
