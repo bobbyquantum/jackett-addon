@@ -12,6 +12,7 @@ ENV XDG_DATA_HOME="/data" \
 # Setup base
 RUN apt-get update && apt-get install -y \
     coreutils \
+    libicu-dev \
     nginx \
     openvpn
 

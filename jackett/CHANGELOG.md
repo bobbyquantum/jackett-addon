@@ -1,3 +1,7 @@
+## 0.24.932-1
+
+Fix missing libicu dependency for .NET runtime
+
 ## 0.24.932
 
 Update to latest jackett
