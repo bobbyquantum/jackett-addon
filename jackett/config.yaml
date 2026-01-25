@@ -7,7 +7,6 @@ startup: services
 webui: http://[HOST]:[PORT:9117]
 panel_icon: mdi:progress-download
 arch:
-  - armv7
   - aarch64
   - amd64
 map:
