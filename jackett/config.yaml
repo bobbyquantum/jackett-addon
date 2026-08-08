@@ -41,4 +41,4 @@ environment:
   LOG_FORMAT: "{LEVEL}: {MESSAGE}"
 backup_exclude: ["*.txt"]
 init: false
-image: ghcr.io/bobbyquantum/jackett-addon
+image: ghcr.io/bobbyquantum/jackett/{arch}

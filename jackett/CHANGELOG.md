@@ -2,6 +2,7 @@
 
 - Update to latest Jackett v0.24.2353
 - Fix duplicate panel_icon key in config.yaml
+- Fix image reference to match deployed image location
 
 ## 0.24.932-1
 
