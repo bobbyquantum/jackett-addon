@@ -1,3 +1,9 @@
+## 0.24.2353-1
+
+- Update to latest Jackett v0.24.2353
+- Update base image to debian-base 9.3.0
+- Fix duplicate panel_icon key in config.yaml
+
 ## 0.24.932-1
 
 - Fix missing libicu dependency for .NET runtime
